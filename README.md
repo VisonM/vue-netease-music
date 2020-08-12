@@ -1,29 +1,11 @@
-# vue-netease-music
+## 工作交接
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| 项目名/模块名                 | GitLab                                                                           | 注意事项 / todo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 接收日期   | 接收人     | 接收状态 |
+| ----------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | -------- |
+| 有车购管理后台                | <http://gitlab.repos.suv163.com/frontend-admin/auto_buy_admin.git>               | `optimize`项目有很多组件未实现共用，接口大量重复请求，后续有时间可以重构下                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2020.08.10 | 铭亮       | `未开始` |
+| yc-weapp-cli                  | <http://gitlab.repos.suv163.com/frontend-engineering/yc-weapp-cli.git>           | `bug`生成分包模板等功能还有 bug 未修复，新增 ts 模板需要适配                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 2020.08.10 | 润娜       | `未开始` |
+| template-plugin-cli           | <http://gitlab.repos.suv163.com/frontend-engineering/template-plugin-cli.git>    | `feature`目前支持原生、webpack、webpack+ts 三种模板初始化，以分支区分。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 2020.08.10 | 润娜       | `未开始` |
+| yc-upload                     | <http://gitlab.repos.suv163.com/frontend-engineering/yc-upload.git>              | `feature`资源上传七牛终端工具，用于一些比较老的项目替代 ftp 上传发版，同时上传日志会同步到 lmc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 2020.08.10 | 润娜       | `未开始` |
+| iyourcar_wxapp_webpack_plugin | <http://gitlab.repos.suv163.com/frontend-tool/iyourcar_wxapp_webpack_plugin.git> | `feature`小程序 webpack 核心插件，目前用于百度小程序与有车以后+小程序                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 2020.08.10 | 振华、志寰 | `未开始` |
+| 百度小程序                    | <http://gitlab.repos.suv163.com/frontend-miniprogram/baidu-smart-app.git>        | `bad`开发流程与有车以后+完全一致。<br>1.由于登录逻辑不同，暂时未与最新的微信小程序同步，因为每次转换均需要手动修改一次授权部分的逻辑。<br>2.百度那边对应性能要求比较高，目前安卓平台性能不达标（原微信小程序历史包袱比较重，有很多冗余或者废弃的代码与逻辑，包体大与初始化操作耗时等）。百度那边有对应的技术与我们对接，微信群问楚欣加，但是对于问题的关注与处理断断续续，感觉是各方都不够重视。<br>3.百度小程序的生态很差（几乎没有生态），但是百度 app 本身对于他的小程序给与了很多原生功能接口，单从性能，不差于微信小程序甚至略好。<br>4.目前信息流推送落地页资讯详情页有单独的独立分包 | 2020.08.10 | 振华       | `未开始` |
+| 百度搬家工具                  | <http://gitlab.repos.suv163.com/frontend-tool/wx2baidu.git>                      | `feature`转化有车以后+为百度小程序                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2020.08.10 | 振华       | `未开始` |

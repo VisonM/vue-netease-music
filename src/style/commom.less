@@ -1,0 +1,28 @@
+.v-btn {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 100px;
+  padding: 5px 20px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.v-border-one-bottom {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    transform: scaleY(0.5);
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background: #e6e6e6;
+    width: 100%;
+  }
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-insert-bottom);
+  padding-bottom: constant(safe-area-insert-bottom);
+}
